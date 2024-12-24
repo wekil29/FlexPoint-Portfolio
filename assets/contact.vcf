@@ -1,8 +1,9 @@
 BEGIN:VCARD
 VERSION:3.0
 FN:Wakil Muzeyen
+N:Muzeyen;Wakil;;;
 ORG:FlexPoint Services
-TEL:+1234567890
-EMAIL:contact@flexpointservices.com
-ADR:;;9304 Forest Ln, #140;Dallas;TX;75243;USA
+TEL;TYPE=WORK,VOICE:+1234567890
+EMAIL;TYPE=WORK:contact@flexpointservices.com
+ADR;TYPE=WORK:;;9304 Forest Ln, #140;Dallas;TX;75243;USA
 END:VCARD
