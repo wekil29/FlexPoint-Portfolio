@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Text color */
+    background-color: #F5F5F5; /* Main background */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1A237E; /* Header background */
+    color: #fff; /* White text for contrast */
+}
+
+header .logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+header h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* Section Styles */
+.section {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* About Section */
+.about {
+    background-color: #E3F2FD; /* Featured content background */
+    color: #333; /* Dark text for readability */
+}
+
+/* Services Section */
+.services {
+    background-color: #E3F2FD; /* Featured content background */
+    padding: 30px;
+    color: #333;
+}
+
+.service {
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #BBDEFB; /* Light blue for individual service cards */
+    color: #333;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.service h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #E3F2FD; /* Featured content background */
+}
+
+.save-contact {
+    background-color: #00ACC1; /* Button background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    background-color: #00ACC1; /* Button background */
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.social-icon p {
+    font-size: 12px;
+    margin: 5px 0 0;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1A237E; /* Header background */
+    text-align: center;
+    padding: 10px;
+    color: #fff; /* White text for contrast */
+}
