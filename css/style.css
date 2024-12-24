@@ -179,6 +179,25 @@ header h2 {
     background-color: #00838F;
 }
 
+.save-contact {
+    background-color: #00ACC1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.save-contact:hover {
+    background-color: #00838F;
+}
+
+
 /* Footer Styles */
 footer {
     background-color: #1A237E; /* Header background */
