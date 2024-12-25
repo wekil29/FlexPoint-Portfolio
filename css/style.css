@@ -24,16 +24,6 @@ header .logo {
     margin-bottom: 10px;
 }
 
-header h1 {
-    font-size: 24px;
-    margin: 10px 0;
-}
-
-header h2 {
-    font-size: 18px;
-    font-weight: normal;
-}
-
 /* Section Styles */
 .section {
     padding: 20px;
@@ -80,21 +70,6 @@ header h2 {
 .contact {
     background-color: #E3F2FD; /* Featured content background */
 }
-
-.save-contact {
-    background-color: #00ACC1; /* Button background */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-}
-
 /* Save Contact Button */
 .save-contact {
     background-color: #00ACC1; /* Button background color */
