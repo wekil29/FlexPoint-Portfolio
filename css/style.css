@@ -96,12 +96,23 @@ header h2 {
 }
 
 /* Social Media Icons Section */
+.social-footer {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the footer */
+    z-index: 1000;
+}
+
 .social-icons {
-    display: flex; /* Enable flexbox layout */
-    justify-content: center; /* Center the icons horizontally */
-    flex-wrap: nowrap; /* Prevent wrapping */
-    gap: 20px; /* Add spacing between icons */
-    padding: 10px 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center all icons horizontally */
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    gap: 20px; /* Add space between icons */
+    padding: 10px 0; /* Add padding around the icons */
+    overflow-x: auto; /* Allow horizontal scrolling if needed on smaller screens */
 }
 
 /* Individual Social Icon Styling */
@@ -113,6 +124,7 @@ header h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
+    flex-shrink: 0; /* Prevent icons from shrinking */
 }
 
 .social-icon img {
@@ -126,149 +138,56 @@ header h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
 }
 
-/* Responsive Design for Smaller Screens */
+/* Responsive Adjustments */
 @media screen and (max-width: 768px) {
     .social-icons {
-        flex-wrap: nowrap; /* Prevent wrapping even on small screens */
-        justify-content: center; /* Center icons */
-        gap: 15px; /* Adjust spacing for smaller screens */
+        gap: 15px; /* Reduce spacing for smaller screens */
     }
 
     .social-icon {
-        width: 40px; /* Slightly smaller icons for mobile */
+        width: 40px; /* Smaller icon size for smaller screens */
         height: 40px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .social-icons {
-        flex-wrap: nowrap; /* Ensure icons remain horizontal */
-        justify-content: center; /* Center icons on very small screens */
-        gap: 10px; /* Reduce spacing for very small screens */
+        gap: 10px; /* Reduce spacing further for very small screens */
     }
 
     .social-icon {
-        width: 35px; /* Smaller icons for very small screens */
+        width: 35px; /* Further reduce icon size for very small screens */
         height: 35px;
     }
 }
 
 
-/* Contact Form section */
-.contact-form-section {
-    padding: 20px;
-    text-align: center;
-    background-color: #f5f5f5;
-}
-
-.contact-form {
-    display: inline-block;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 100%;
-}
-
-.contact-form label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
-}
-
-.contact-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background-color: #00ACC1;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.contact-form button:hover {
-    background-color: #00838F;
-}
-
+/* Save Contact Button */
 .save-contact {
-    background-color: #00ACC1;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
+    background-color: #00ACC1; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Add padding around the button */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Button font size */
+    display: inline-flex; /* Align content inline */
+    align-items: center; /* Center align icon and text */
+    gap: 10px; /* Spacing between icon and text */
+    text-decoration: none; /* Remove underline from the text */
+    text-align: center; /* Center the text */
 }
 
+/* Hover Effect */
 .save-contact:hover {
-    background-color: #00838F;
-}
-/* Social Media Footer */
-.social-footer {
-    background-color: #f5f5f5; /* Light gray background */
-    padding: 20px;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the footer */
-    z-index: 1000;
+    background-color: #00838F; /* Darker color on hover */
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Spacing between icons */
-}
-
-.social-icon {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    border-radius: 50%;
-    background-color: #fff; /* White background for icons */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow */
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.social-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.social-icon:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Emphasize shadow on hover */
-}
-
-/* Responsive Design for Mobile */
-@media screen and (max-width: 768px) {
-    .social-footer {
-        padding: 10px; /* Reduce padding for smaller screens */
-    }
-
-    .social-icon {
-        width: 40px; /* Smaller icons for mobile */
-        height: 40px;
-    }
-
-    .social-icons {
-        gap: 15px; /* Reduce gap between icons */
-    }
+/* Link Inside Save Contact Button */
+.save-contact a {
+    color: #fff; /* Inherit button text color */
+    text-decoration: none; /* Remove underline */
+    font-size: inherit; /* Match button font size */
 }
 
 
