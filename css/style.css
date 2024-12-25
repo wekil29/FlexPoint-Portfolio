@@ -95,6 +95,34 @@ header h2 {
     gap: 10px;
 }
 
+/* Save Contact Button */
+.save-contact {
+    background-color: #00ACC1; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Add padding around the button */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Button font size */
+    display: inline-flex; /* Align content inline */
+    align-items: center; /* Center align icon and text */
+    gap: 10px; /* Spacing between icon and text */
+    text-decoration: none; /* Remove underline from the text */
+    text-align: center; /* Center the text */
+}
+
+/* Hover Effect */
+.save-contact:hover {
+    background-color: #00838F; /* Darker color on hover */
+}
+
+/* Link Inside Save Contact Button */
+.save-contact a {
+    color: #fff; /* Inherit button text color */
+    text-decoration: none; /* Remove underline */
+    font-size: inherit; /* Match button font size */
+}
+
 /* Social Media Icons Section */
 .social-footer {
     background-color: #f5f5f5; /* Light gray background */
@@ -110,7 +138,7 @@ header h2 {
     display: flex; /* Use flexbox for layout */
     justify-content: center; /* Center all icons horizontally */
     flex-wrap: nowrap; /* Prevent wrapping to the next line */
-    gap: 20px; /* Add space between icons */
+    gap: 30px; /* Increased space between icons */
     padding: 10px 0; /* Add padding around the icons */
     overflow-x: auto; /* Allow horizontal scrolling if needed on smaller screens */
 }
@@ -141,7 +169,7 @@ header h2 {
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
     .social-icons {
-        gap: 15px; /* Reduce spacing for smaller screens */
+        gap: 25px; /* Adjusted spacing for smaller screens */
     }
 
     .social-icon {
@@ -152,42 +180,13 @@ header h2 {
 
 @media screen and (max-width: 480px) {
     .social-icons {
-        gap: 10px; /* Reduce spacing further for very small screens */
+        gap: 20px; /* Adjusted spacing further for very small screens */
     }
 
     .social-icon {
         width: 35px; /* Further reduce icon size for very small screens */
         height: 35px;
     }
-}
-
-
-/* Save Contact Button */
-.save-contact {
-    background-color: #00ACC1; /* Button background color */
-    color: #fff; /* Button text color */
-    padding: 10px 20px; /* Add padding around the button */
-    border: none; /* Remove border */
-    border-radius: 10px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Button font size */
-    display: inline-flex; /* Align content inline */
-    align-items: center; /* Center align icon and text */
-    gap: 10px; /* Spacing between icon and text */
-    text-decoration: none; /* Remove underline from the text */
-    text-align: center; /* Center the text */
-}
-
-/* Hover Effect */
-.save-contact:hover {
-    background-color: #00838F; /* Darker color on hover */
-}
-
-/* Link Inside Save Contact Button */
-.save-contact a {
-    color: #fff; /* Inherit button text color */
-    text-decoration: none; /* Remove underline */
-    font-size: inherit; /* Match button font size */
 }
 
 
