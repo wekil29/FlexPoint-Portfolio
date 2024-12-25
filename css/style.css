@@ -95,79 +95,64 @@ header h2 {
     gap: 10px;
 }
 
-/* General Social Icons Styles */
+/* Social Media Icons Section */
 .social-icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    gap: 20px;
-    margin-top: 20px;
-    padding: 0 10px; /* Add padding for small screens */
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center the icons horizontally */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 20px; /* Add spacing between icons */
+    padding: 10px 0;
 }
 
+/* Individual Social Icon Styling */
 .social-icon {
-    background-color: #00ACC1; /* Icon background */
-    color: #fff;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make icons circular */
+    background-color: #fff; /* White background for icons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .social-icon:hover {
     transform: scale(1.1); /* Slight zoom on hover */
-    background-color: #00838F; /* Darker color on hover */
-}
-
-.social-icon p {
-    font-size: 12px;
-    margin-top: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
 }
 
 /* Responsive Design for Smaller Screens */
 @media screen and (max-width: 768px) {
     .social-icons {
-        gap: 15px; /* Reduce gap between icons */
+        flex-wrap: nowrap; /* Prevent wrapping even on small screens */
         justify-content: center; /* Center icons */
+        gap: 15px; /* Adjust spacing for smaller screens */
     }
 
     .social-icon {
-        width: 70px; /* Slightly smaller icons */
-        height: 70px;
-        font-size: 20px; /* Adjust font size */
-    }
-
-    .social-icon p {
-        font-size: 10px; /* Adjust text size for smaller icons */
+        width: 40px; /* Slightly smaller icons for mobile */
+        height: 40px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .social-icons {
-        flex-direction: column; /* Stack icons vertically */
-        align-items: center;
-        gap: 10px; /* Reduce gap further for very small screens */
+        flex-wrap: nowrap; /* Ensure icons remain horizontal */
+        justify-content: center; /* Center icons on very small screens */
+        gap: 10px; /* Reduce spacing for very small screens */
     }
 
     .social-icon {
-        width: 60px; /* Further reduce icon size */
-        height: 60px;
-        font-size: 18px;
-    }
-
-    .social-icon p {
-        font-size: 9px;
+        width: 35px; /* Smaller icons for very small screens */
+        height: 35px;
     }
 }
+
 
 /* Contact Form section */
 .contact-form-section {
